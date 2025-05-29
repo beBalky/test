@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+{
+    "epochs": 100,
+    "subset_size": 1000,
+    "batch_size": 256,
+    "num_workers": 4,
+    "data_dir": "E:\\Files\\OneDrive\\Codes\\PyCharmProjects\\DL_from_scratch\\data",
+    "timestamp": "2025-05-25T09:01:51.495032"
+=======
+{
+    "epochs": 100,
+    "subset_size": 1000,
+    "batch_size": 256,
+    "num_workers": 4,
+    "data_dir": "E:\\Files\\OneDrive\\Codes\\PyCharmProjects\\DL_from_scratch\\data",
+    "timestamp": "2025-05-25T09:01:51.495032"
+>>>>>>> fbfedc385406b6556c748886c8ab26c2e95c54a6
+}

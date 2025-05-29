@@ -1,0 +1,16 @@
+<<<<<<< HEAD
+torch>=2.0.0
+numpy>=1.21.0
+spacy>=3.0.0
+torchtext>=0.14.0
+tqdm>=4.65.0
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz
+=======
+torch>=2.0.0
+numpy>=1.21.0
+spacy>=3.0.0
+torchtext>=0.14.0
+tqdm>=4.65.0
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz
+>>>>>>> 122082e17e4a59b84a279fae2b942a56c0dd3b0b
+de_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-3.0.0/de_core_news_sm-3.0.0.tar.gz 

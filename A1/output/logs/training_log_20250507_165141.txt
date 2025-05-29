@@ -1,0 +1,711 @@
+<<<<<<< HEAD
+Training started at: 2025-05-07 16:51:41
+Log file: A1/output\logs\training_log_20250507_165141.txt
+Random seed set to: 42
+Data path: A1/data/boston.csv
+原始数据行数: 506
+原始数据中NaN值数量: 120
+
+各列缺失值数量:
+CRIM       20
+ZN         20
+INDUS      20
+CHAS       20
+NOX         0
+RM          0
+AGE        20
+DIS         0
+RAD         0
+TAX         0
+PTRATIO     0
+B           0
+LSTAT      20
+MEDV        0
+dtype: int64
+Dataset columns: ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT', 'MEDV']
+
+清理后的数据行数: 394
+清理后的数据中NaN值数量: 0
+
+X的统计信息:
+形状: (394, 13)
+最小值: 0.0 最大值: 711.0 均值: 70.10954356696602
+
+y的统计信息:
+形状: (394, 1)
+最小值: 5.0 最大值: 50.0 均值: 22.359644670050763
+
+训练集大小: (315, 13) 测试集大小: (79, 13)
+Training features shape: (315, 13), Test features shape: (79, 13)
+Training target shape: (315, 1), Test target shape: (79, 1)
+Model architecture: Input(13) -> Hidden(32) -> Output(1)
+Activation function: relu
+Optimizers to be evaluated: SGD, Momentum, Adam
+
+==================================================
+Training model with SGD optimizer...
+==================================================
+Total epochs: 1000
+Evaluation interval: 100
+Epoch [20/100], Loss: 0.605546
+Epoch [40/100], Loss: 0.395055
+Epoch [60/100], Loss: 0.309419
+Epoch [80/100], Loss: 0.265195
+Epoch [100/100], Loss: 0.238721
+Epoch 100/1000, SGD Test MSE: 0.436397
+Epoch [20/100], Loss: 0.221112
+Epoch [40/100], Loss: 0.208315
+Epoch [60/100], Loss: 0.198432
+Epoch [80/100], Loss: 0.190596
+Epoch [100/100], Loss: 0.183712
+Epoch 200/1000, SGD Test MSE: 0.400760
+Epoch [20/100], Loss: 0.178230
+Epoch [40/100], Loss: 0.173469
+Epoch [60/100], Loss: 0.169241
+Epoch [80/100], Loss: 0.165603
+Epoch [100/100], Loss: 0.162471
+Epoch 300/1000, SGD Test MSE: 0.391082
+Epoch [20/100], Loss: 0.159597
+Epoch [40/100], Loss: 0.157077
+Epoch [60/100], Loss: 0.154649
+Epoch [80/100], Loss: 0.152560
+Epoch [100/100], Loss: 0.150555
+Epoch 400/1000, SGD Test MSE: 0.385917
+Epoch [20/100], Loss: 0.148687
+Epoch [40/100], Loss: 0.147157
+Epoch [60/100], Loss: 0.145605
+Epoch [80/100], Loss: 0.144092
+Epoch [100/100], Loss: 0.142691
+Epoch 500/1000, SGD Test MSE: 0.381868
+Epoch [20/100], Loss: 0.141420
+Epoch [40/100], Loss: 0.140183
+Epoch [60/100], Loss: 0.139028
+Epoch [80/100], Loss: 0.137906
+Epoch [100/100], Loss: 0.136926
+Epoch 600/1000, SGD Test MSE: 0.377635
+Epoch [20/100], Loss: 0.135828
+Epoch [40/100], Loss: 0.134894
+Epoch [60/100], Loss: 0.133958
+Epoch [80/100], Loss: 0.133096
+Epoch [100/100], Loss: 0.132258
+Epoch 700/1000, SGD Test MSE: 0.373943
+Epoch [20/100], Loss: 0.131423
+Epoch [40/100], Loss: 0.130661
+Epoch [60/100], Loss: 0.129853
+Epoch [80/100], Loss: 0.129028
+Epoch [100/100], Loss: 0.128346
+Epoch 800/1000, SGD Test MSE: 0.369873
+Epoch [20/100], Loss: 0.127548
+Epoch [40/100], Loss: 0.126885
+Epoch [60/100], Loss: 0.126040
+Epoch [80/100], Loss: 0.125412
+Epoch [100/100], Loss: 0.124711
+Epoch 900/1000, SGD Test MSE: 0.367270
+Epoch [20/100], Loss: 0.124052
+Epoch [40/100], Loss: 0.123432
+Epoch [60/100], Loss: 0.122788
+Epoch [80/100], Loss: 0.122154
+Epoch [100/100], Loss: 0.121652
+Epoch 1000/1000, SGD Test MSE: 0.363540
+SGD Final Test MSE: 0.363540
+Performance metrics on raw scale:
+  MAE: 3.015449
+  MSE: 29.981459
+  RMSE: 5.475533
+  R²: 0.644544
+
+==================================================
+Training model with Momentum optimizer...
+==================================================
+Total epochs: 1000
+Evaluation interval: 100
+Epoch [20/100], Loss: 0.177659
+Epoch [40/100], Loss: 0.135983
+Epoch [60/100], Loss: 0.121637
+Epoch [80/100], Loss: 0.112348
+Epoch [100/100], Loss: 0.108059
+Epoch 100/1000, Momentum Test MSE: 0.319474
+Epoch [20/100], Loss: 0.102898
+Epoch [40/100], Loss: 0.099989
+Epoch [60/100], Loss: 0.097564
+Epoch [80/100], Loss: 0.094714
+Epoch [100/100], Loss: 0.092748
+Epoch 200/1000, Momentum Test MSE: 0.301075
+Epoch [20/100], Loss: 0.091284
+Epoch [40/100], Loss: 0.089653
+Epoch [60/100], Loss: 0.087641
+Epoch [80/100], Loss: 0.086258
+Epoch [100/100], Loss: 0.084635
+Epoch 300/1000, Momentum Test MSE: 0.296508
+Epoch [20/100], Loss: 0.083266
+Epoch [40/100], Loss: 0.082022
+Epoch [60/100], Loss: 0.080822
+Epoch [80/100], Loss: 0.079398
+Epoch [100/100], Loss: 0.078487
+Epoch 400/1000, Momentum Test MSE: 0.285666
+Epoch [20/100], Loss: 0.077141
+Epoch [40/100], Loss: 0.076134
+Epoch [60/100], Loss: 0.075258
+Epoch [80/100], Loss: 0.074503
+Epoch [100/100], Loss: 0.073411
+Epoch 500/1000, Momentum Test MSE: 0.280247
+Epoch [20/100], Loss: 0.072239
+Epoch [40/100], Loss: 0.071087
+Epoch [60/100], Loss: 0.070263
+Epoch [80/100], Loss: 0.069704
+Epoch [100/100], Loss: 0.068517
+Epoch 600/1000, Momentum Test MSE: 0.274441
+Epoch [20/100], Loss: 0.067776
+Epoch [40/100], Loss: 0.066800
+Epoch [60/100], Loss: 0.066207
+Epoch [80/100], Loss: 0.065355
+Epoch [100/100], Loss: 0.064872
+Epoch 700/1000, Momentum Test MSE: 0.272158
+Epoch [20/100], Loss: 0.064159
+Epoch [40/100], Loss: 0.063509
+Epoch [60/100], Loss: 0.062924
+Epoch [80/100], Loss: 0.062220
+Epoch [100/100], Loss: 0.061500
+Epoch 800/1000, Momentum Test MSE: 0.270898
+Epoch [20/100], Loss: 0.060868
+Epoch [40/100], Loss: 0.060348
+Epoch [60/100], Loss: 0.059512
+Epoch [80/100], Loss: 0.058973
+Epoch [100/100], Loss: 0.058184
+Epoch 900/1000, Momentum Test MSE: 0.269443
+Epoch [20/100], Loss: 0.057628
+Epoch [40/100], Loss: 0.057050
+Epoch [60/100], Loss: 0.056415
+Epoch [80/100], Loss: 0.056070
+Epoch [100/100], Loss: 0.055444
+Epoch 1000/1000, Momentum Test MSE: 0.268227
+Momentum Final Test MSE: 0.268227
+Performance metrics on raw scale:
+  MAE: 2.558498
+  MSE: 22.120871
+  RMSE: 4.703283
+  R²: 0.737738
+
+==================================================
+Training model with Adam optimizer...
+==================================================
+Total epochs: 1000
+Evaluation interval: 100
+Epoch [20/100], Loss: 0.210754
+Epoch [40/100], Loss: 0.150796
+Epoch [60/100], Loss: 0.125529
+Epoch [80/100], Loss: 0.108824
+Epoch [100/100], Loss: 0.095911
+Epoch 100/1000, Adam Test MSE: 0.325013
+Epoch [20/100], Loss: 0.086388
+Epoch [40/100], Loss: 0.078895
+Epoch [60/100], Loss: 0.072330
+Epoch [80/100], Loss: 0.066937
+Epoch [100/100], Loss: 0.062194
+Epoch 200/1000, Adam Test MSE: 0.271629
+Epoch [20/100], Loss: 0.057928
+Epoch [40/100], Loss: 0.054301
+Epoch [60/100], Loss: 0.050855
+Epoch [80/100], Loss: 0.047775
+Epoch [100/100], Loss: 0.045630
+Epoch 300/1000, Adam Test MSE: 0.238922
+Epoch [20/100], Loss: 0.042825
+Epoch [40/100], Loss: 0.040887
+Epoch [60/100], Loss: 0.039556
+Epoch [80/100], Loss: 0.037636
+Epoch [100/100], Loss: 0.036004
+Epoch 400/1000, Adam Test MSE: 0.231004
+Epoch [20/100], Loss: 0.034593
+Epoch [40/100], Loss: 0.034184
+Epoch [60/100], Loss: 0.032041
+Epoch [80/100], Loss: 0.030485
+Epoch [100/100], Loss: 0.029931
+Epoch 500/1000, Adam Test MSE: 0.221531
+Epoch [20/100], Loss: 0.029803
+Epoch [40/100], Loss: 0.028081
+Epoch [60/100], Loss: 0.027370
+Epoch [80/100], Loss: 0.026437
+Epoch [100/100], Loss: 0.025814
+Epoch 600/1000, Adam Test MSE: 0.222873
+Epoch [20/100], Loss: 0.024605
+Epoch [40/100], Loss: 0.024218
+Epoch [60/100], Loss: 0.023696
+Epoch [80/100], Loss: 0.024132
+Epoch [100/100], Loss: 0.022667
+Epoch 700/1000, Adam Test MSE: 0.228902
+Epoch [20/100], Loss: 0.022067
+Epoch [40/100], Loss: 0.022150
+Epoch [60/100], Loss: 0.021248
+Epoch [80/100], Loss: 0.020228
+Epoch [100/100], Loss: 0.020175
+Epoch 800/1000, Adam Test MSE: 0.227864
+Epoch [20/100], Loss: 0.020191
+Epoch [40/100], Loss: 0.020631
+Epoch [60/100], Loss: 0.018991
+Epoch [80/100], Loss: 0.018679
+Epoch [100/100], Loss: 0.017772
+Epoch 900/1000, Adam Test MSE: 0.229687
+Epoch [20/100], Loss: 0.018205
+Epoch [40/100], Loss: 0.017920
+Epoch [60/100], Loss: 0.017639
+Epoch [80/100], Loss: 0.017311
+Epoch [100/100], Loss: 0.016918
+Epoch 1000/1000, Adam Test MSE: 0.230562
+Adam Final Test MSE: 0.230562
+Performance metrics on raw scale:
+  MAE: 2.368876
+  MSE: 19.014599
+  RMSE: 4.360573
+  R²: 0.774565
+
+Training history saved to: A1/output\logs\training_history.csv
+Saved training loss curves to: A1/output\plots\training_loss_curves.png
+Saved test MSE comparison to: A1/output\plots\test_mse_comparison.png
+
+优化器性能对比总结:
+----------------------------------------------------------------------
+优化器         MAE         MSE         RMSE        R²          
+----------------------------------------------------------------------
+SGD         3.0154      29.9815     5.4755      0.6445      
+Momentum    2.5585      22.1209     4.7033      0.7377      
+Adam        2.3689      19.0146     4.3606      0.7746      
+----------------------------------------------------------------------
+Optimizer metrics saved to: A1/output\logs\optimizer_metrics.csv
+
+Best optimizer: Adam
+
+==================================================
+Retraining with best optimizer: Adam
+==================================================
+Epoch [20/100], Loss: 0.170471
+Epoch [40/100], Loss: 0.115411
+Epoch [60/100], Loss: 0.094846
+Epoch [80/100], Loss: 0.080720
+Epoch [100/100], Loss: 0.070355
+Best optimizer Adam - Epoch 100/1000, MSE: 0.225574
+Epoch [20/100], Loss: 0.062693
+Epoch [40/100], Loss: 0.056834
+Epoch [60/100], Loss: 0.052092
+Epoch [80/100], Loss: 0.048565
+Epoch [100/100], Loss: 0.045567
+Best optimizer Adam - Epoch 200/1000, MSE: 0.207050
+Epoch [20/100], Loss: 0.042312
+Epoch [40/100], Loss: 0.039892
+Epoch [60/100], Loss: 0.038460
+Epoch [80/100], Loss: 0.037345
+Epoch [100/100], Loss: 0.035848
+Best optimizer Adam - Epoch 300/1000, MSE: 0.197581
+Epoch [20/100], Loss: 0.033301
+Epoch [40/100], Loss: 0.032748
+Epoch [60/100], Loss: 0.030877
+Epoch [80/100], Loss: 0.029669
+Epoch [100/100], Loss: 0.029326
+Best optimizer Adam - Epoch 400/1000, MSE: 0.191118
+Epoch [20/100], Loss: 0.027790
+Epoch [40/100], Loss: 0.027510
+Epoch [60/100], Loss: 0.026690
+Epoch [80/100], Loss: 0.025229
+Epoch [100/100], Loss: 0.024774
+Best optimizer Adam - Epoch 500/1000, MSE: 0.201633
+Epoch [20/100], Loss: 0.023839
+Epoch [40/100], Loss: 0.023688
+Epoch [60/100], Loss: 0.023028
+Epoch [80/100], Loss: 0.022551
+Epoch [100/100], Loss: 0.021868
+Best optimizer Adam - Epoch 600/1000, MSE: 0.209803
+Epoch [20/100], Loss: 0.022195
+Epoch [40/100], Loss: 0.021154
+Epoch [60/100], Loss: 0.020911
+Epoch [80/100], Loss: 0.020844
+Epoch [100/100], Loss: 0.019991
+Best optimizer Adam - Epoch 700/1000, MSE: 0.216275
+Epoch [20/100], Loss: 0.020184
+Epoch [40/100], Loss: 0.018786
+Epoch [60/100], Loss: 0.019066
+Epoch [80/100], Loss: 0.019025
+Epoch [100/100], Loss: 0.018059
+Best optimizer Adam - Epoch 800/1000, MSE: 0.222159
+Epoch [20/100], Loss: 0.017601
+Epoch [40/100], Loss: 0.017913
+Epoch [60/100], Loss: 0.016994
+Epoch [80/100], Loss: 0.017403
+Epoch [100/100], Loss: 0.016289
+Best optimizer Adam - Epoch 900/1000, MSE: 0.229682
+Epoch [20/100], Loss: 0.016571
+Epoch [40/100], Loss: 0.015745
+Epoch [60/100], Loss: 0.015436
+Epoch [80/100], Loss: 0.015445
+Epoch [100/100], Loss: 0.015367
+Best optimizer Adam - Epoch 1000/1000, MSE: 0.239558
+
+Model Evaluation Metrics (Raw Scale):
+MSE: 19.756531
+RMSE: 4.444832
+MAE: 2.441804
+R²: 0.765769
+Best model predictions saved to: A1/output\logs\best_model_predictions.csv
+Saved prediction vs actual plot to: A1/output\plots\prediction_vs_actual.png
+Saved residual plots to: A1/output\plots\residual_plot.png and A1/output\plots\residual_distribution.png
+Feature importance saved to: A1/output\logs\feature_importance.csv
+Saved feature importance plot to: A1/output\plots\feature_importance.png
+Saved best optimizer performance plot to: A1/output\plots\best_optimizer_performance.png
+
+Training completed!
+All results have been saved to: A1/output
+End time: 2025-05-07 16:52:12
+=======
+Training started at: 2025-05-07 16:51:41
+Log file: A1/output\logs\training_log_20250507_165141.txt
+Random seed set to: 42
+Data path: A1/data/boston.csv
+原始数据行数: 506
+原始数据中NaN值数量: 120
+
+各列缺失值数量:
+CRIM       20
+ZN         20
+INDUS      20
+CHAS       20
+NOX         0
+RM          0
+AGE        20
+DIS         0
+RAD         0
+TAX         0
+PTRATIO     0
+B           0
+LSTAT      20
+MEDV        0
+dtype: int64
+Dataset columns: ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO', 'B', 'LSTAT', 'MEDV']
+
+清理后的数据行数: 394
+清理后的数据中NaN值数量: 0
+
+X的统计信息:
+形状: (394, 13)
+最小值: 0.0 最大值: 711.0 均值: 70.10954356696602
+
+y的统计信息:
+形状: (394, 1)
+最小值: 5.0 最大值: 50.0 均值: 22.359644670050763
+
+训练集大小: (315, 13) 测试集大小: (79, 13)
+Training features shape: (315, 13), Test features shape: (79, 13)
+Training target shape: (315, 1), Test target shape: (79, 1)
+Model architecture: Input(13) -> Hidden(32) -> Output(1)
+Activation function: relu
+Optimizers to be evaluated: SGD, Momentum, Adam
+
+==================================================
+Training model with SGD optimizer...
+==================================================
+Total epochs: 1000
+Evaluation interval: 100
+Epoch [20/100], Loss: 0.605546
+Epoch [40/100], Loss: 0.395055
+Epoch [60/100], Loss: 0.309419
+Epoch [80/100], Loss: 0.265195
+Epoch [100/100], Loss: 0.238721
+Epoch 100/1000, SGD Test MSE: 0.436397
+Epoch [20/100], Loss: 0.221112
+Epoch [40/100], Loss: 0.208315
+Epoch [60/100], Loss: 0.198432
+Epoch [80/100], Loss: 0.190596
+Epoch [100/100], Loss: 0.183712
+Epoch 200/1000, SGD Test MSE: 0.400760
+Epoch [20/100], Loss: 0.178230
+Epoch [40/100], Loss: 0.173469
+Epoch [60/100], Loss: 0.169241
+Epoch [80/100], Loss: 0.165603
+Epoch [100/100], Loss: 0.162471
+Epoch 300/1000, SGD Test MSE: 0.391082
+Epoch [20/100], Loss: 0.159597
+Epoch [40/100], Loss: 0.157077
+Epoch [60/100], Loss: 0.154649
+Epoch [80/100], Loss: 0.152560
+Epoch [100/100], Loss: 0.150555
+Epoch 400/1000, SGD Test MSE: 0.385917
+Epoch [20/100], Loss: 0.148687
+Epoch [40/100], Loss: 0.147157
+Epoch [60/100], Loss: 0.145605
+Epoch [80/100], Loss: 0.144092
+Epoch [100/100], Loss: 0.142691
+Epoch 500/1000, SGD Test MSE: 0.381868
+Epoch [20/100], Loss: 0.141420
+Epoch [40/100], Loss: 0.140183
+Epoch [60/100], Loss: 0.139028
+Epoch [80/100], Loss: 0.137906
+Epoch [100/100], Loss: 0.136926
+Epoch 600/1000, SGD Test MSE: 0.377635
+Epoch [20/100], Loss: 0.135828
+Epoch [40/100], Loss: 0.134894
+Epoch [60/100], Loss: 0.133958
+Epoch [80/100], Loss: 0.133096
+Epoch [100/100], Loss: 0.132258
+Epoch 700/1000, SGD Test MSE: 0.373943
+Epoch [20/100], Loss: 0.131423
+Epoch [40/100], Loss: 0.130661
+Epoch [60/100], Loss: 0.129853
+Epoch [80/100], Loss: 0.129028
+Epoch [100/100], Loss: 0.128346
+Epoch 800/1000, SGD Test MSE: 0.369873
+Epoch [20/100], Loss: 0.127548
+Epoch [40/100], Loss: 0.126885
+Epoch [60/100], Loss: 0.126040
+Epoch [80/100], Loss: 0.125412
+Epoch [100/100], Loss: 0.124711
+Epoch 900/1000, SGD Test MSE: 0.367270
+Epoch [20/100], Loss: 0.124052
+Epoch [40/100], Loss: 0.123432
+Epoch [60/100], Loss: 0.122788
+Epoch [80/100], Loss: 0.122154
+Epoch [100/100], Loss: 0.121652
+Epoch 1000/1000, SGD Test MSE: 0.363540
+SGD Final Test MSE: 0.363540
+Performance metrics on raw scale:
+  MAE: 3.015449
+  MSE: 29.981459
+  RMSE: 5.475533
+  R²: 0.644544
+
+==================================================
+Training model with Momentum optimizer...
+==================================================
+Total epochs: 1000
+Evaluation interval: 100
+Epoch [20/100], Loss: 0.177659
+Epoch [40/100], Loss: 0.135983
+Epoch [60/100], Loss: 0.121637
+Epoch [80/100], Loss: 0.112348
+Epoch [100/100], Loss: 0.108059
+Epoch 100/1000, Momentum Test MSE: 0.319474
+Epoch [20/100], Loss: 0.102898
+Epoch [40/100], Loss: 0.099989
+Epoch [60/100], Loss: 0.097564
+Epoch [80/100], Loss: 0.094714
+Epoch [100/100], Loss: 0.092748
+Epoch 200/1000, Momentum Test MSE: 0.301075
+Epoch [20/100], Loss: 0.091284
+Epoch [40/100], Loss: 0.089653
+Epoch [60/100], Loss: 0.087641
+Epoch [80/100], Loss: 0.086258
+Epoch [100/100], Loss: 0.084635
+Epoch 300/1000, Momentum Test MSE: 0.296508
+Epoch [20/100], Loss: 0.083266
+Epoch [40/100], Loss: 0.082022
+Epoch [60/100], Loss: 0.080822
+Epoch [80/100], Loss: 0.079398
+Epoch [100/100], Loss: 0.078487
+Epoch 400/1000, Momentum Test MSE: 0.285666
+Epoch [20/100], Loss: 0.077141
+Epoch [40/100], Loss: 0.076134
+Epoch [60/100], Loss: 0.075258
+Epoch [80/100], Loss: 0.074503
+Epoch [100/100], Loss: 0.073411
+Epoch 500/1000, Momentum Test MSE: 0.280247
+Epoch [20/100], Loss: 0.072239
+Epoch [40/100], Loss: 0.071087
+Epoch [60/100], Loss: 0.070263
+Epoch [80/100], Loss: 0.069704
+Epoch [100/100], Loss: 0.068517
+Epoch 600/1000, Momentum Test MSE: 0.274441
+Epoch [20/100], Loss: 0.067776
+Epoch [40/100], Loss: 0.066800
+Epoch [60/100], Loss: 0.066207
+Epoch [80/100], Loss: 0.065355
+Epoch [100/100], Loss: 0.064872
+Epoch 700/1000, Momentum Test MSE: 0.272158
+Epoch [20/100], Loss: 0.064159
+Epoch [40/100], Loss: 0.063509
+Epoch [60/100], Loss: 0.062924
+Epoch [80/100], Loss: 0.062220
+Epoch [100/100], Loss: 0.061500
+Epoch 800/1000, Momentum Test MSE: 0.270898
+Epoch [20/100], Loss: 0.060868
+Epoch [40/100], Loss: 0.060348
+Epoch [60/100], Loss: 0.059512
+Epoch [80/100], Loss: 0.058973
+Epoch [100/100], Loss: 0.058184
+Epoch 900/1000, Momentum Test MSE: 0.269443
+Epoch [20/100], Loss: 0.057628
+Epoch [40/100], Loss: 0.057050
+Epoch [60/100], Loss: 0.056415
+Epoch [80/100], Loss: 0.056070
+Epoch [100/100], Loss: 0.055444
+Epoch 1000/1000, Momentum Test MSE: 0.268227
+Momentum Final Test MSE: 0.268227
+Performance metrics on raw scale:
+  MAE: 2.558498
+  MSE: 22.120871
+  RMSE: 4.703283
+  R²: 0.737738
+
+==================================================
+Training model with Adam optimizer...
+==================================================
+Total epochs: 1000
+Evaluation interval: 100
+Epoch [20/100], Loss: 0.210754
+Epoch [40/100], Loss: 0.150796
+Epoch [60/100], Loss: 0.125529
+Epoch [80/100], Loss: 0.108824
+Epoch [100/100], Loss: 0.095911
+Epoch 100/1000, Adam Test MSE: 0.325013
+Epoch [20/100], Loss: 0.086388
+Epoch [40/100], Loss: 0.078895
+Epoch [60/100], Loss: 0.072330
+Epoch [80/100], Loss: 0.066937
+Epoch [100/100], Loss: 0.062194
+Epoch 200/1000, Adam Test MSE: 0.271629
+Epoch [20/100], Loss: 0.057928
+Epoch [40/100], Loss: 0.054301
+Epoch [60/100], Loss: 0.050855
+Epoch [80/100], Loss: 0.047775
+Epoch [100/100], Loss: 0.045630
+Epoch 300/1000, Adam Test MSE: 0.238922
+Epoch [20/100], Loss: 0.042825
+Epoch [40/100], Loss: 0.040887
+Epoch [60/100], Loss: 0.039556
+Epoch [80/100], Loss: 0.037636
+Epoch [100/100], Loss: 0.036004
+Epoch 400/1000, Adam Test MSE: 0.231004
+Epoch [20/100], Loss: 0.034593
+Epoch [40/100], Loss: 0.034184
+Epoch [60/100], Loss: 0.032041
+Epoch [80/100], Loss: 0.030485
+Epoch [100/100], Loss: 0.029931
+Epoch 500/1000, Adam Test MSE: 0.221531
+Epoch [20/100], Loss: 0.029803
+Epoch [40/100], Loss: 0.028081
+Epoch [60/100], Loss: 0.027370
+Epoch [80/100], Loss: 0.026437
+Epoch [100/100], Loss: 0.025814
+Epoch 600/1000, Adam Test MSE: 0.222873
+Epoch [20/100], Loss: 0.024605
+Epoch [40/100], Loss: 0.024218
+Epoch [60/100], Loss: 0.023696
+Epoch [80/100], Loss: 0.024132
+Epoch [100/100], Loss: 0.022667
+Epoch 700/1000, Adam Test MSE: 0.228902
+Epoch [20/100], Loss: 0.022067
+Epoch [40/100], Loss: 0.022150
+Epoch [60/100], Loss: 0.021248
+Epoch [80/100], Loss: 0.020228
+Epoch [100/100], Loss: 0.020175
+Epoch 800/1000, Adam Test MSE: 0.227864
+Epoch [20/100], Loss: 0.020191
+Epoch [40/100], Loss: 0.020631
+Epoch [60/100], Loss: 0.018991
+Epoch [80/100], Loss: 0.018679
+Epoch [100/100], Loss: 0.017772
+Epoch 900/1000, Adam Test MSE: 0.229687
+Epoch [20/100], Loss: 0.018205
+Epoch [40/100], Loss: 0.017920
+Epoch [60/100], Loss: 0.017639
+Epoch [80/100], Loss: 0.017311
+Epoch [100/100], Loss: 0.016918
+Epoch 1000/1000, Adam Test MSE: 0.230562
+Adam Final Test MSE: 0.230562
+Performance metrics on raw scale:
+  MAE: 2.368876
+  MSE: 19.014599
+  RMSE: 4.360573
+  R²: 0.774565
+
+Training history saved to: A1/output\logs\training_history.csv
+Saved training loss curves to: A1/output\plots\training_loss_curves.png
+Saved test MSE comparison to: A1/output\plots\test_mse_comparison.png
+
+优化器性能对比总结:
+----------------------------------------------------------------------
+优化器         MAE         MSE         RMSE        R²          
+----------------------------------------------------------------------
+SGD         3.0154      29.9815     5.4755      0.6445      
+Momentum    2.5585      22.1209     4.7033      0.7377      
+Adam        2.3689      19.0146     4.3606      0.7746      
+----------------------------------------------------------------------
+Optimizer metrics saved to: A1/output\logs\optimizer_metrics.csv
+
+Best optimizer: Adam
+
+==================================================
+Retraining with best optimizer: Adam
+==================================================
+Epoch [20/100], Loss: 0.170471
+Epoch [40/100], Loss: 0.115411
+Epoch [60/100], Loss: 0.094846
+Epoch [80/100], Loss: 0.080720
+Epoch [100/100], Loss: 0.070355
+Best optimizer Adam - Epoch 100/1000, MSE: 0.225574
+Epoch [20/100], Loss: 0.062693
+Epoch [40/100], Loss: 0.056834
+Epoch [60/100], Loss: 0.052092
+Epoch [80/100], Loss: 0.048565
+Epoch [100/100], Loss: 0.045567
+Best optimizer Adam - Epoch 200/1000, MSE: 0.207050
+Epoch [20/100], Loss: 0.042312
+Epoch [40/100], Loss: 0.039892
+Epoch [60/100], Loss: 0.038460
+Epoch [80/100], Loss: 0.037345
+Epoch [100/100], Loss: 0.035848
+Best optimizer Adam - Epoch 300/1000, MSE: 0.197581
+Epoch [20/100], Loss: 0.033301
+Epoch [40/100], Loss: 0.032748
+Epoch [60/100], Loss: 0.030877
+Epoch [80/100], Loss: 0.029669
+Epoch [100/100], Loss: 0.029326
+Best optimizer Adam - Epoch 400/1000, MSE: 0.191118
+Epoch [20/100], Loss: 0.027790
+Epoch [40/100], Loss: 0.027510
+Epoch [60/100], Loss: 0.026690
+Epoch [80/100], Loss: 0.025229
+Epoch [100/100], Loss: 0.024774
+Best optimizer Adam - Epoch 500/1000, MSE: 0.201633
+Epoch [20/100], Loss: 0.023839
+Epoch [40/100], Loss: 0.023688
+Epoch [60/100], Loss: 0.023028
+Epoch [80/100], Loss: 0.022551
+Epoch [100/100], Loss: 0.021868
+Best optimizer Adam - Epoch 600/1000, MSE: 0.209803
+Epoch [20/100], Loss: 0.022195
+Epoch [40/100], Loss: 0.021154
+Epoch [60/100], Loss: 0.020911
+Epoch [80/100], Loss: 0.020844
+Epoch [100/100], Loss: 0.019991
+Best optimizer Adam - Epoch 700/1000, MSE: 0.216275
+Epoch [20/100], Loss: 0.020184
+Epoch [40/100], Loss: 0.018786
+Epoch [60/100], Loss: 0.019066
+Epoch [80/100], Loss: 0.019025
+Epoch [100/100], Loss: 0.018059
+Best optimizer Adam - Epoch 800/1000, MSE: 0.222159
+Epoch [20/100], Loss: 0.017601
+Epoch [40/100], Loss: 0.017913
+Epoch [60/100], Loss: 0.016994
+Epoch [80/100], Loss: 0.017403
+Epoch [100/100], Loss: 0.016289
+Best optimizer Adam - Epoch 900/1000, MSE: 0.229682
+Epoch [20/100], Loss: 0.016571
+Epoch [40/100], Loss: 0.015745
+Epoch [60/100], Loss: 0.015436
+Epoch [80/100], Loss: 0.015445
+Epoch [100/100], Loss: 0.015367
+Best optimizer Adam - Epoch 1000/1000, MSE: 0.239558
+
+Model Evaluation Metrics (Raw Scale):
+MSE: 19.756531
+RMSE: 4.444832
+MAE: 2.441804
+R²: 0.765769
+Best model predictions saved to: A1/output\logs\best_model_predictions.csv
+Saved prediction vs actual plot to: A1/output\plots\prediction_vs_actual.png
+Saved residual plots to: A1/output\plots\residual_plot.png and A1/output\plots\residual_distribution.png
+Feature importance saved to: A1/output\logs\feature_importance.csv
+Saved feature importance plot to: A1/output\plots\feature_importance.png
+Saved best optimizer performance plot to: A1/output\plots\best_optimizer_performance.png
+
+Training completed!
+All results have been saved to: A1/output
+End time: 2025-05-07 16:52:12
+>>>>>>> fbfedc385406b6556c748886c8ab26c2e95c54a6
