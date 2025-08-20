@@ -1,74 +1,52 @@
-# 深度学习从零实现系列
+## 新闻推荐系统
 
-------
+一个可运行的端到端示例：
+- SQLite 存储文章与交互
+- 基于 TF‑IDF + 余弦相似度的内容召回（支持中文分词 jieba）
+- FastAPI 提供在线推荐接口
+- 支持 RSS 抓取
+- 自带示例数据与引导脚本
 
-#### 完成的作业：A1，A2，A6
-
-#### 贾登辉 24140580
-
-#### 王昭 24140617
-
-------
-
-
-
-这个项目是一个深度学习算法的从零实现系列，旨在通过实践来深入理解各种深度学习算法的原理和实现细节。
-
-## 项目列表
-
-### A1: 多层感知机（MLP）
-- 从零实现基础神经网络
-- 包含前向传播和反向传播
-- 支持多层网络结构和自定义激活函数
-
-### A2: 卷积神经网络（CNN）
-- 基于NumPy从零实现AlexNet架构
-- 包含卷积层、池化层、全连接层等完整实现
-- 支持MNIST数据集训练和测试
-
-### A6: 注意力机制神经机器翻译
-- 实现基于注意力机制的序列到序列模型
-- 支持LSTM和GRU两种循环神经网络架构
-- 实现Luong和Bahdanau两种注意力机制
-- 提供完整的英德翻译功能
-
-## 环境要求
-
-每个子项目都有其特定的依赖要求，请参考各自目录下的requirements.txt文件。一般来说，基础环境需求如下：
-
-- Python 3.7+
-- NumPy
-- PyTorch（A6项目需要）
-- 其他特定依赖（见各子项目的requirements.txt）
-
-## 使用说明
-
-1. 克隆仓库：
+### 1. 准备环境
 ```bash
-git clone [repository-url]
+python -m pip install -r requirements.txt
 ```
 
-2. 进入感兴趣的子项目目录：
+### 2. 载入示例数据并验证
 ```bash
-cd [A1/A2/A6]
+python scripts/bootstrap_sample.py
+```
+你会看到示例推荐结果输出。
+
+### 3. 启动服务
+```bash
+uvicorn newsrec.app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-3. 安装依赖：
-```bash
-pip install -r requirements.txt
+### 4. API 快览
+- 健康检查: `GET /healthz`
+- 写入文章: `POST /articles`（传入 Article 或列表）
+- 记录交互: `POST /interactions`
+- 获取推荐: `GET /recommend?user_id=...` 或 `GET /recommend?article_id=...`
+- RSS 抓取: `POST /ingest/rss`（传入 `feed_url`）
+
+### 5. 目录结构
+```
+newsrec/
+  app/
+    main.py
+    models.py
+    recommender.py
+    storage.py
+    fetcher.py
+    pipeline.py
+  data/
+    sample_news.jsonl
+scripts/
+  bootstrap_sample.py
+requirements.txt
 ```
 
-4. 按照各子项目的README.md进行操作
-
-## 项目特点
-
-- 注重代码可读性
-- 详细的注释和文档说明
-- 完整的测试用例
-- 模块化的代码结构
-
-## 注意事项
-
-- 这是一个教学用途的实现，主要用于学习和理解
-- 生产环境建议使用成熟的深度学习框架
-- 部分实现可能需要较大的计算资源
+### 6. 备注
+- 初次启动会基于数据库内容构建 TF‑IDF 索引；文章有变更时可调用 `/articles` 或通过脚本更新索引。
+- 生产环境可接入更强的向量模型或召回/重排链路。
